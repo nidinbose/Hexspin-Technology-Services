@@ -47,8 +47,8 @@ const Services = () => {
   ];
 
   return (
-    <div>
-     <div className="group">
+    <div className='transform md:rotate-[-2deg]'>
+     <div className="group transform rotate-2">
      <h1 className="text-white text-6xl text-center mb-9 font-bold font-barlow group-hover:text-red-600 ">
   OUR SE<span className="text-red-600 group-hover:text-white">R</span>VICES
 </h1>
@@ -71,7 +71,7 @@ const Services = () => {
               marginTop: `${index * 2}rem`, 
             }}
           >
-            <div className="border p-12 w-80 h-full xl:h-[60vh] border-gray-600 transition-transform duration-500 transform group-hover:rotate-3 group-hover:-rotate-y-30 group-hover:scale-105">
+            <div className="border p-12 w-80 h-full xl:h-[60vh] border-gray-600 transition-transform duration-500 transform group-hover:rotate-3 transform md:rotate-[-1deg] group-hover:-rotate-y-30 group-hover:scale-105">
               <div className="border border-red-500 p-3">
                 <img
                   src={card.imgSrc}

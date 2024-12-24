@@ -39,8 +39,8 @@ const GoogleReview = () => {
   }, []);
 
   return (
-    <div className="p-6 sm:p-8 border-t border-b border-gray-300 mt-12 relative mb-12">
-      <h1 className="text-white text-6xl text-center font-extrabold font-barlow mb-7">Google Reviews</h1>
+    <div className="p-6 sm:p-8 border-t border-b border-gray-300 mt-12 relative mb-12 transform rotate-[-3deg]">
+      <h1 className="text-white text-6xl text-center font-extrabold font-barlow mb-7">Google Reviews</h1> 
       <div className="relative">
         {/* Review Cards Container */}
         <div

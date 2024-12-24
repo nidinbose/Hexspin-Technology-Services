@@ -7,21 +7,24 @@ import GoogleReview from './Home/GoogleReview'
 import BuildFor from './Home/BuildFor'
 import About from './Home/About'
 import ScrollingText from './Home/ScrollingText'
+import Projects from './Home/Projects'
 
 const Home = () => {
   return (
-    <div className='bg-black pb-[50vh]'>
+    <div className='bg-black pb-[50vh] overflow-x-hidden'>
 
 <Navbar/>
 <Headers/>
 <ScrollingText/>
-<Services/>
-<GoogleReview/>
-<BuildFor/>
 <About/>
+<Services/>
+
+<BuildFor/>
+<Projects/>
 
 
 
+<GoogleReview/>
 
     </div>
   )
