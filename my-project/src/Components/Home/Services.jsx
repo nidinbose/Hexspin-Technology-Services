@@ -65,7 +65,7 @@ const Services = () => {
             custom={index}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.2 }}
             variants={cardVariants}
             style={{
               marginTop: `${index * 2}rem`, 
