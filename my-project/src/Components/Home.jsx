@@ -19,12 +19,12 @@ const Home = () => {
 <About/>
 <Services/>
 
-{/* <BuildFor/> */}
-{/* <Projects/> */}
+<BuildFor/>
+<Projects/>
 
 
 
-{/* <GoogleReview/> */}
+<GoogleReview/>
 
     </div>
   )

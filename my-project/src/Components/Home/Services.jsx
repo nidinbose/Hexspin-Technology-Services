@@ -76,7 +76,7 @@ const Services = () => {
                 <img
                   src={card.imgSrc}
                   alt="Service"
-                  className="border p-6 object-cover hover:border-red-500"
+                  className="border p-6 object-cover hover:border-red-600"
                 />
               </div>
               <h1 className="text-white text-start mt-12 font-barlow text-xl font-bold">{card.title}</h1>
