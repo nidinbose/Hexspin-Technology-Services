@@ -1,0 +1,91 @@
+/* Frontend.css */
+
+/* Main container styling */
+.timeline-container {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px; /* Ensure the last item is spaced correctly */
+  }
+  
+  /* Timeline line running above the dots */
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 2px;
+    height: 100%;
+    background-color: #0077ff;
+    animation: lineAnimation 1s ease-out forwards;
+  }
+  
+  /* Timeline item styling */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 1s ease forwards;
+  }
+  
+  .timeline-item:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .timeline-item:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .timeline-item:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  
+  /* Timeline dot */
+  .timeline-dot {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 12px;
+    height: 12px;
+    background-color: #0077ff;
+    border-radius: 50%;
+  }
+  
+  /* Timeline text styling */
+  .timeline-text {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 1.2rem;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .timeline-item:hover .timeline-text {
+    transform: translateX(10px);
+  }
+  
+  /* Animation for sliding text */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation for the line */
+  @keyframes lineAnimation {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  

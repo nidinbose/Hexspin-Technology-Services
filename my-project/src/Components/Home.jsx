@@ -8,6 +8,7 @@ import BuildFor from './Home/BuildFor'
 import About from './Home/About'
 import ScrollingText from './Home/ScrollingText'
 import Projects from './Home/Projects'
+import Frontend from './Home/Frontend'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
 
 
 <GoogleReview/>
+<Frontend/>
 
     </div>
   )

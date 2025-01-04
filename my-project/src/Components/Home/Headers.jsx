@@ -27,17 +27,7 @@ const Headers = () => {
               <br />
               GOALS WITH OUR <span className="text-red-600">HEXSPIN EXPERTS</span>
             </motion.h1>
-            {/* <motion.p
-           initial={{ x: "100vw" }}
-           animate={{ x: 0 }}
-           transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
-              className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm lg:text-md xl:text-xl text-gray-300 leading-relaxed font-barlow max-w-lg font-semibold"
-            >
-              Unlock new opportunities with cutting-edge{" "}
-              <span className="text-red-500">website development</span>, UI/UX
-              design, and seamless application solutions tailored for your
-              business.
-            </motion.p> */}
+          
           </div>
         </div>
       </div>
@@ -84,9 +74,9 @@ const Headers = () => {
     className="flex items-center justify-center"
   >
     <img
-      src="./Images/H2.png"
+      src="./Images/B5.png"
       alt="Creative Team"
-      className="max-w-full rounded-lg shadow-2xl"
+      className="max-w-full rounded-lg shadow-2xl "
       style={{ objectFit: 'cover', margin: 0 }}
     />
   </motion.div>
