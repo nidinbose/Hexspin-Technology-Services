@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Headers = () => {
   return (
     <div className="bg-gradient-to-b from-black via-black to-black text-white w-full">
-      <div className="relative text-white overflow-hidden">
+      {/* <div className="relative text-white overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-8 px-6 sm:px-12 lg:px-20 py-12 sm:py-16 lg:py-24">
           <div className="flex flex-col justify-center items-start text-left w-full px-4 sm:px-6 lg:px-10 xl:px-12">
             <motion.h1
@@ -30,8 +30,9 @@ const Headers = () => {
           
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 relative">
+        
   <motion.div
   className="p-6 md:p-12 font-barlow font-semibold text-base md:text-xl lg:text-2xl"
   initial={{ x: '100vw', opacity: 0 }}
@@ -74,7 +75,7 @@ const Headers = () => {
     className="flex items-center justify-center"
   >
     <img
-      src="./Images/B5.png"
+      src="./Images/X1.png"
       alt="Creative Team"
       className="max-w-full rounded-lg shadow-2xl "
       style={{ objectFit: 'cover', margin: 0 }}
