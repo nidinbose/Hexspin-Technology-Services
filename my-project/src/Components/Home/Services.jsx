@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -15,37 +16,20 @@ const cardVariants = {
 };
 
 const Services = () => {
-  const cards = [
-    {
-      id: 1,
-      imgSrc: './Images/\de753278dfba5e383a86a84e35adce48.png',
-      title: 'Website Developing',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ante neque, lacinia finibus.',
-    },
-    {
-      id: 2,
-      imgSrc: './Images/\G1.png',
-      title: 'Graphic Designing',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ante neque, lacinia finibus.',
-    },
-    {
-      id: 3,
-      imgSrc: 'https://i.pinimg.com/564x/de/75/32/de753278dfba5e383a86a84e35adce48.jpg',
-      title: 'UI/UX Designing',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ante neque, lacinia finibus.',
-    },
-    {
-      id: 4,
-      imgSrc: 'https://i.pinimg.com/564x/de/75/32/de753278dfba5e383a86a84e35adce48.jpg',
-      title: 'Application Developing',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor ante neque, lacinia finibus.',
-    },
-  ];
+const [cards,setCards]=useState([]);
 
+const getCards=async()=>{
+
+console.log(cards);
+
+const res=await axios.get("http://localhost:3005/api/getservice")
+console.log(res.data);
+setCards([...res.data])
+
+}
+useEffect(()=>{
+  getCards()
+},[])
   return (
     <div className='transform md:rotate-[-2deg]'>
      <div className="group transform rotate-2">
@@ -74,7 +58,7 @@ const Services = () => {
             <div className="border p-12 w-80 h-full xl:h-[60vh] border-gray-600 transition-transform duration-500 transform group-hover:rotate-3 transform md:rotate-[-1deg] group-hover:-rotate-y-30 group-hover:scale-105">
               <div className="border border-red-500 p-3">
                 <img
-                  src={card.imgSrc}
+                  src={card.image}
                   alt="Service"
                   className="border p-6 object-cover hover:border-red-600"
                 />
