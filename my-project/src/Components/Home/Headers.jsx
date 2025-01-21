@@ -3,6 +3,18 @@ import { BsFillCaretRightFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Headers = () => {
+
+
+
+  // Animation variants
+  const lineVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.5, duration: 0.6 },
+    }),
+  };
   return (
     <div className="bg-gradient-to-b from-black via-black to-black text-white w-full">
       {/* <div className="relative text-white overflow-hidden">
@@ -40,12 +52,12 @@ const Headers = () => {
   viewport={{ once: false, amount: 0.5 }}
   transition={{ duration: 3, ease: 'easeOut' }}
 >
-  <h1 className="text-center md:text-left">
+  <motion.h1 className="text-center md:text-left" animate="visible" variants={lineVariants}>
     At <span className="text-red-600">Hexspin Technology Services</span>, we specialize in providing startup enterprises, <br className="hidden md:block" />
     companies, and businesses with the solutions they need to reach their <br className="hidden md:block" />
     technology and business goals faster. We have an expert team of Hexspin experts with a wide range of experience in <br className="hidden md:block" />
     almost every area of IT solutions.
-  </h1>
+  </motion.h1>
 
   <h2 className="mt-4 font-barlow mb-6 text-center md:text-left text-sm md:text-base lg:text-xl">
     In short, We Love IT and love helping <br className="hidden md:block" />

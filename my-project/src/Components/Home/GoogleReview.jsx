@@ -66,17 +66,17 @@ const GoogleReview = () => {
               key={review.id}
               className="border border-gray-300 p-4 flex-shrink-0 snap-center w-[80%] sm:w-[60%] md:w-[50%] lg:w-[30%] bg-tranparant hover:border-red-500"
             >
-              <div className="flex flex-col items-center text-center p-5 space-y-4 border hover:border-red-500">
+              <div className="flex flex-row items-center text-center p-10 space-y-4 space-x-7 border border-white hover:border-red-500">
                 <img
                   src={review.photo}
                   alt={review.name}
-                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-2 border-red-500 p-2"
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-red-500 p-2"
                 />
                 <div>
-                  <h1 className="text-lg sm:text-xl font-semibold text-gray-800">
+                  <h1 className="text-lg sm:text-3xl font-semibold text-gray-100">
                     {review.name}
                   </h1>
-                  <p className="text-gray-600 text-sm sm:text-base">
+                  <p className="text-sm sm:text-base text-red-600">
                     {review.role}
                   </p>
                   <p className="text-gray-600 mt-2 text-sm sm:text-base">

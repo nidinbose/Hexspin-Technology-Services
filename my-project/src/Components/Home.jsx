@@ -9,6 +9,9 @@ import About from './Home/About'
 import ScrollingText from './Home/ScrollingText'
 import Projects from './Home/Projects'
 import Frontend from './Home/Frontend'
+import Xscroll from './Home/Xscroll'
+import Yscroll from './Home/Yscroll'
+import Why from './Home/Why'
 
 const Home = () => {
   return (
@@ -19,6 +22,8 @@ const Home = () => {
 <ScrollingText/>
 <About/>
 <Services/>
+{/* <Yscroll/> */}
+
 
 <BuildFor/>
 <Projects/>
@@ -27,6 +32,9 @@ const Home = () => {
 
 <GoogleReview/>
 <Frontend/>
+<Xscroll/>
+<Why/>
+
 
     </div>
   )

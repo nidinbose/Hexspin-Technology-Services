@@ -11,7 +11,17 @@ const Navbar = () => {
     <nav className="w-full  text-white">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <div className="text-lg font-bold">Logo</div>
+        <div className="text-lg font-bold">
+        <video 
+  src="./Images/v2.mp4" 
+  className="loop w-28 h-20" 
+  // controls 
+  autoPlay 
+  loop 
+  muted
+></video>
+
+        </div>
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-8 ">

@@ -6,4 +6,4 @@ const serviceSchema=new mongoose.Schema({
     description:{type:String}
 })
 
-export default mongoose.model.review || mongoose.model("reviews",serviceSchema)
+export default mongoose.model.service || mongoose.model("services",serviceSchema)

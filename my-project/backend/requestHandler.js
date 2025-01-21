@@ -32,6 +32,18 @@ export async function getServices(req,res){
     }
 }
 
+export async function editService(req,res){
+    try {
+        const {id}=req.params
+        const data=await service.findOne({_id:id})
+        return res.status(200).send(data)
+        console.log(res);
+        
+    } catch (error) {
+        
+    }
+}
+
 export async function addProject(req,res){
     const {name,description,photo,link}=req.body
 
@@ -55,6 +67,18 @@ export async function getProjects(req,res){
         return res.status(400).send("No projects available")
     } catch (error) {
         return res.status(500).send(error,"internal error in getting projects")
+    }
+}
+
+export async function editProject(req,res){
+    try {
+        const {id}=req.params
+        const data=await project.findOne({_id:id})
+        return res.status(200).send(data)
+        console.log(res);
+        
+    } catch (error) {
+        
     }
 }
 
